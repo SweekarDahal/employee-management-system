@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Mail } from "lucide-react";
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -12,7 +11,7 @@ const Login = () => {
         setPassword("");
     }
   return (
-    <div className="h-screen w-full flex justify-center items-center bg-[rgb(122,0,122)]">
+    <div className="h-screen w-screen flex justify-center items-center bg-[rgb(122,0,122)]">
       <div className="mt-[6vh] border-2 border-red-400 h-[85vh] w-[60vh] rounded-2xl bg-white">
         <div className="w-full h-1/3 flex items-center justify-center">
           <h1 className="text-3xl font-bold text">Login</h1>
