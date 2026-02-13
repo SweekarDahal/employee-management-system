@@ -3,7 +3,7 @@ import React from 'react'
 const CreateTask = () => {
   return (
     <div className="flex flex-col w-full gap-2">
-        <form className="flex flex-col px-10 py-5 bg-[#081C15]">
+        <form className="flex flex-col px-10 py-5  bg-[#081C15]">
           <div className="flex items-baseline justify-between">
             <div className="w-1/2 flex flex-col gap-5">
               <div>
@@ -12,7 +12,7 @@ const CreateTask = () => {
                   type="text"
                   required
                   placeholder="Enter task title"
-                  className="w-3/4 px-5 py-2 border-2 border-white  rounded text-black font-semibold bg-transparent placeholder:text-gray-500"
+                  className="w-3/4 px-5 py-2 border-2 border-white  rounded text-gray-300 font-semibold bg-transparent placeholder:text-gray-500"
                 />
               </div>
               <div>
@@ -29,7 +29,7 @@ const CreateTask = () => {
                   type="text"
                   required
                   placeholder="Assign to Developer,Designer,etc..."
-                  className="w-3/4 px-5 py-2 border-2 border-white  rounded text-black font-semibold bg-transparent placeholder:text-gray-500"
+                  className="w-3/4 px-5 py-2 border-2 border-white  rounded text-gray-300 font-semibold bg-transparent placeholder:text-gray-500"
                 />
               </div>
               <div>
@@ -38,7 +38,7 @@ const CreateTask = () => {
                   type="text"
                   required
                   placeholder="Desiegn,Development,etc...."
-                  className="w-3/4 px-5 py-2 border-2 border-white  rounded text-black font-semibold bg-transparent placeholder:text-gray-500"
+                  className="w-3/4 px-5 py-2 border-2 border-white  rounded text-gray-300 font-semibold bg-transparent placeholder:text-gray-500"
                 />
               </div>
             </div>
@@ -48,7 +48,7 @@ const CreateTask = () => {
               <textarea
                 rows={9}
                 placeholder="Detailed Description of task (Max 500 Words)"
-                className="w-full px-5 py-2 border-2 border-white rounded text-black font-semibold bg-transparent placeholder:text-gray-500"
+                className="w-full px-5 py-2 border-2 border-white rounded text-gray-300 font-semibold bg-transparent placeholder:text-gray-500"
               />
               </div>
               <button className="w-3/4 px-5 py-2 rounded text-white font-medium bg-[#52B788] active:scale-95 cursor-pointer mt-2">
