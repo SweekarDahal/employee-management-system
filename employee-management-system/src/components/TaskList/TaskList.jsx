@@ -8,6 +8,7 @@ const TaskList = ({data}) => {
   return (
     <div id='TaskList' className='h-[50%] w-full py-6 mt-7 flex justify-around items-center gap-10 overflow-x-auto'>
         {data.tasks.map((elem, idx) => {
+            if(elem.taskTitle && elem.taskDescription && elem.taskDate && elem.assignTo) {
             if(elem.active) {
                 return <AcceptTask key = {idx} data = {elem} />
             }else if(elem.newTask) {
@@ -17,6 +18,10 @@ const TaskList = ({data}) => {
             }else {
                 return <FailedTask key = {idx}  data = {elem}/>
             }
+            } else {
+                return null
+            }
+
         })}     
     </div>
   )
